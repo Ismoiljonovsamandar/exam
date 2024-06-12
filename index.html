@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="crud__wrapper">
+        <div class="crud__box1">
+          <div class="crud__logo">
+            <img src="./images/logo.svg" alt="logo image" />
+          </div>
+          <label>
+            <div class="crud__user_img">
+              <img
+                class="render__img"
+                src="./images/user__img.png"
+                alt="user image"
+              />
+            </div>
+            <input required class="crud__img_input" type="file" />
+          </label>
+          <h2 class="crud__title">Ismoiljonov Samandar</h2>
+          <p class="crud__text">Admin</p>
+          <div class="crud__strong">
+            <img src="./images/student.svg" alt="student icon" />
+            <p class="crud__strong_text">Students</p>
+          </div>
+          <div class="crud__logout">
+            <button class="crud__logout_btn">Logout</button>
+            <img src="./images/logout.svg" alt="logout icon" />
+          </div>
+        </div>
+        <div class="crud__box2">
+          <div class="crud__header">
+            <div class="crud__header__img">
+              <img src="./images/crud__header__img.svg" alt="header icon  " />
+            </div>
+            <div class="crud__search">
+              <input
+                class="crud__header_input"
+                type="search"
+                name=" crud__search"
+                placeholder="Search..."
+              />
+              <img src="./images/clock.svg" alt="clock icon" />
+            </div>
+          </div>
+          <div class="students__box">
+            <header class="students__header">
+              <div class="students__img">
+                <img src="./images/studnets.svg" alt="students logo" />
+              </div>
+              <div class="students__btn_box">
+                <button class="students__sort_btn">
+                  <img src="./images/sort__icon.svg" alt="sort icon" />
+                </button>
+                <button class="students__add_btn">ADD NEW STUDENT</button>
+              </div>
+            </header>
+            <ul class="students__nav_list">
+              <li class="students__nav_item">User picture</li>
+              <li class="students__nav_item">Name</li>
+              <li class="students__nav_item">Email</li>
+              <li class="students__nav_item">Phone</li>
+              <li class="students__nav_item">Enroll Number</li>
+            </ul>
+            <ul class="students__list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal__wrapper" class="modal__wrapper">
+      <div class="modal"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

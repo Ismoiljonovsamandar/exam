@@ -1,0 +1,396 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crud__wrapper {
+  display: flex;
+}
+
+.crud__box1 {
+  /* max-width: 400px; */
+  padding-top: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 33px;
+  background-color: cadetblue;
+}
+
+.crud__box2 {
+  width: 100%;
+}
+
+.crud__logo {
+  margin-bottom: 27px;
+}
+
+.crud__logo::before {
+  content: "";
+  border: 3px solid white;
+}
+
+.crud__user_img {
+  max-width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: grey;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.render__img {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+}
+
+.crud__img_input {
+  opacity: 0;
+}
+.crud__title {
+  text-align: center;
+}
+
+.crud__text {
+  margin-top: 20px;
+  margin-bottom: 63px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+}
+
+.crud__strong {
+  display: flex;
+  align-items: center;
+  width: 193px;
+  padding: 13px 50px;
+  border-radius: 6px;
+  background-color: rgb(254, 175, 0);
+  margin: 0 auto;
+  margin-bottom: 235px;
+}
+
+.crud__strong_text {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-left: 15px;
+}
+
+.crud__logout {
+  display: block;
+  text-align: center;
+}
+
+.crud__logout_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.crud__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  padding: 12px 30px;
+}
+
+.crud__header__img {
+  overflow: hidden;
+}
+
+.crud__search {
+  display: flex;
+  align-items: center;
+}
+
+.crud__header_input {
+  max-width: 212px;
+  /* color: rgb(196, 196, 196); */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-right: 27px;
+  padding: 9px 100px 11px 13px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+/* .crud__header_input::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/search__icon.svg");
+  background-repeat: no-repeat;
+  background-size: 14px;
+} */
+
+/*======================== students box ================= */
+.crud__box2 {
+  background-color: rgb(248, 248, 248);
+}
+
+.students__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.students__box {
+  padding: 12px 30px;
+}
+
+.students__btn_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.students__sort_btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.students__add_btn {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  background-color: cadetblue;
+  border: none;
+  padding: 13px 27px;
+  cursor: pointer;
+}
+
+.students__nav_list {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  text-emphasis: start;
+  gap: 110px;
+  /* justify-content: space-evenly; */
+}
+
+.students__nav_item {
+  color: rgb(172, 172, 172);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.students__list {
+  border-radius: 8px;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.modal {
+  width: 60%;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 100px auto;
+  background: linear-gradient(
+    48.76deg,
+    rgb(254, 175, 0) 19.353%,
+    rgb(248, 212, 66) 90.115%
+  );
+}
+
+.open__modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+}
+
+.add__input {
+  opacity: 0;
+}
+
+.update__input {
+  opacity: 0;
+}
+
+.user__img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.user__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.user__input {
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.user__input_box {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user__submit {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+  background-color: #ffd900;
+}
+
+.user__submit:hover {
+  transition: all 0.4s;
+  background-color: greenyellow;
+}
+
+/* ====== list item start ===== */
+
+.user__image {
+  width: 65px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.user__item_box {
+  display: flex;
+  padding: 17px 12px;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  border-radius: 8px;
+
+  background-color: #fff;
+}
+
+.user__item_text {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.user__item_btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* ====== list item end ===== */
+
+.delete__wrapper {
+  display: block;
+  text-align: center;
+}
+
+.delete__wrapper h2 {
+  margin-bottom: 20px;
+}
+
+.user__delete_btn {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: aqua;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.user__cencel_btn {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}

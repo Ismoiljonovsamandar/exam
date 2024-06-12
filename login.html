@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>imtion6</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login__wrapper">
+        <div class="wrapper">
+          <h2 class="login__title">
+            <span class="login__span"></span> Login Opertaion
+          </h2>
+          <strong class="login__strong">Login page</strong>
+          <p class="login__text">Enter email and password</p>
+          <form class="login__form">
+            <label for="email__input" class="login__email_label"> Email </label>
+            <input
+              name="login__email"
+              id="email__input"
+              class="login__input"
+              type="email"
+              required
+              placeholder="Enter your email"
+            />
+            <label class="login__email_label">Password </label>
+            <input
+              name="login__password"
+              class="login__input"
+              type="password"
+              required
+              placeholder="Enter your password"
+            />
+            <button type="submit" class="login__btn">SIGN IN</button>
+            <p class="error__text">
+              Email yoki password noto'g'ri tekshirib qaytadan tering
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
