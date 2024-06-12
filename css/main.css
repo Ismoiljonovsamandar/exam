@@ -65,11 +65,7 @@ a {
 
 .crud__logo {
   margin-bottom: 27px;
-}
-
-.crud__logo::before {
-  content: "";
-  border: 3px solid white;
+  margin-left: 80px;
 }
 
 .crud__user_img {
@@ -111,7 +107,7 @@ a {
   width: 193px;
   padding: 13px 50px;
   border-radius: 6px;
-  background-color: rgb(254, 175, 0);
+  background-color: chartreuse;
   margin: 0 auto;
   margin-bottom: 235px;
 }
@@ -257,11 +253,7 @@ a {
   padding: 30px;
   border-radius: 20px;
   margin: 100px auto;
-  background: linear-gradient(
-    48.76deg,
-    rgb(254, 175, 0) 19.353%,
-    rgb(248, 212, 66) 90.115%
-  );
+  background-color: cadetblue;
 }
 
 .open__modal {
@@ -324,12 +316,13 @@ a {
   cursor: pointer;
   border: none;
   margin: 0 auto;
-  background-color: #ffd900;
+  background-color: chartreuse;
 }
 
 .user__submit:hover {
-  transition: all 0.4s;
-  background-color: greenyellow;
+  transition: all 0.5s;
+  background-color: rgb(8, 0, 255);
+  color: white;
 }
 
 /* ====== list item start ===== */
