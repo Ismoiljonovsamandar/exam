@@ -8,8 +8,8 @@ elFrom.addEventListener("submit", function (evt) {
     email: evt.target[0].value,
     password: evt.target[1].value,
   };
-  const elEmail = "samandar@gmail.com";
-  const elPassword = "11111111";
+  const elEmail = "john@mail.com";
+  const elPassword = "changeme";
 
   if (data.email == elEmail && data.password == elPassword) {
     window.localStorage.setItem("user", JSON.stringify(data));
