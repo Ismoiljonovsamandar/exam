@@ -9,7 +9,7 @@ elFrom.addEventListener("submit", function (evt) {
     password: evt.target[1].value,
   };
   const elEmail = "samandar@gmail.com";
-  const elPassword = "samandar2111";
+  const elPassword = "11111111";
 
   if (data.email == elEmail && data.password == elPassword) {
     window.localStorage.setItem("user", JSON.stringify(data));
